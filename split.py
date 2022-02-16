@@ -12,7 +12,7 @@ with open('file_list.pkl','rb') as f:
 total_files = len(file_list) # Tổng số file có nhãn trong thư mục train
 print("Tổng số file  = ", total_files)
 
-# Anh em tạo sẵn thư mục này nếu chưa có nhé :D Mình khỏi viết hàm check ở đây hehe
+# File phuc vu traning yolo
 train_folder = "yolo_data\\images\\train"
 val_folder = "yolo_data\\images\\valid"
 
