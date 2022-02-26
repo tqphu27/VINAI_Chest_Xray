@@ -20,7 +20,7 @@ Project được chia thành 2 phần chính:
 - Chọn mô hình để huấn luyện(Ở đây mình chọn 2 mô hình yolo5m và yolo5x).
 - Trong mỗi mô hình, vào file yaml tương ứng và sửa thông số nc=14(trùng với số class)
 - Tạo một file data.yml trong models: 
-- <img src="https://user-images.githubusercontent.com/90370260/155838525-b26c0749-67a8-44a9-bc4d-e570a404e0a5.png" alt="200" width="300" />
+ <img src="https://user-images.githubusercontent.com/90370260/155838525-b26c0749-67a8-44a9-bc4d-e570a404e0a5.png" alt="200" width="300" />
 - Sau đó training
   + Theo model yolo5m: [Notebook](https://colab.research.google.com/drive/1axv9C87HVGcVCnFdxPSfeZ5TAw6JU63q?authuser=2#scrollTo=yeu77eYsOOCc)
   + Theo model yolo5x: [Notebook](https://colab.research.google.com/drive/1cXx2pt9JLaXPuN40WDBOZl2fxf5arU9T?authuser=4&hl=vi)
