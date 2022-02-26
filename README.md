@@ -28,4 +28,4 @@ Project được chia thành 2 phần chính:
 # Kết quả cuối cùng được lưu trong đường dẫn sau:
  - Mô hình Yolo5m: [Drive](https://drive.google.com/drive/folders/1cwxqKLQl_a9UINxOQn3RGI_ip0JSmYvl?usp=sharing)
  - Mô hình Yolo5x: [Drive](https://drive.google.com/drive/u/4/folders/12q2rYtIYcN4FJEEtUDnl6i6jrXzTbG_V)
-Nhận xét: mAP của cả hai mô hình có giá trị xấp xỉ nhau(khoảng 0.245), không được cao cho lắm :(
+- Nhận xét: mAP của cả hai mô hình có giá trị xấp xỉ nhau(khoảng 0.245), không được cao cho lắm :(
