@@ -22,9 +22,10 @@ Project được chia thành 2 phần chính:
 - Tạo một file data.yml trong models:
  ![image](https://user-images.githubusercontent.com/90370260/155838525-b26c0749-67a8-44a9-bc4d-e570a404e0a5.png)
 - Sau đó training
-  + Theo model yolo5m: ![Notebook](https://colab.research.google.com/drive/1axv9C87HVGcVCnFdxPSfeZ5TAw6JU63q?authuser=2#scrollTo=yeu77eYsOOCc)
-  + Theo model yolo5x: ![Notebook](https://colab.research.google.com/drive/1cXx2pt9JLaXPuN40WDBOZl2fxf5arU9T?authuser=4&hl=vi)
+  + Theo model yolo5m: [Notebook](https://colab.research.google.com/drive/1axv9C87HVGcVCnFdxPSfeZ5TAw6JU63q?authuser=2#scrollTo=yeu77eYsOOCc)
+  + Theo model yolo5x: [Notebook](https://colab.research.google.com/drive/1cXx2pt9JLaXPuN40WDBOZl2fxf5arU9T?authuser=4&hl=vi)
 
 # Kết quả cuối cùng được lưu trong đường dẫn sau:
- - Mô hình Yolo5m
- - Mô hình Yolo5x: [!Drive](https://drive.google.com/drive/u/4/folders/12q2rYtIYcN4FJEEtUDnl6i6jrXzTbG_V)
+ - Mô hình Yolo5m: [Drive](https://drive.google.com/drive/folders/1cwxqKLQl_a9UINxOQn3RGI_ip0JSmYvl?usp=sharing)
+ - Mô hình Yolo5x: [Drive](https://drive.google.com/drive/u/4/folders/12q2rYtIYcN4FJEEtUDnl6i6jrXzTbG_V)
+Nhận xét: mAP của cả hai mô hình có giá trị xấp xỉ nhau(khoảng 0.245), không được cao cho lắm :(
