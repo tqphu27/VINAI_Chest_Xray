@@ -3,7 +3,10 @@
 Project được chia thành 2 phần chính:
 - Xử lý dữ liệu (Gồm 14 class).
 - Huấn luyện model bằng cách sử dụng mô hình yolo5.
-  
+- IoU: phần giao lớn và phần hợp nhỏ.
+- Precision – đại diện cho độ tin cậy của model: Nó sẽ cho biết rằng trong những cái model dự đoán là Positive thì có bao nhiêu % là Positive thật.
+- Recall – đại diện cho độ nhạy của model: Nó sẽ cho biết model có thể tóm đúng được bao nhiêu Positive trong dữ liệu được cho.
+- mAP: Trong bài này thì đơn giản mAP là Mean Average Precision là trung bình cộng giá trị AP của các class khác nhau, vậy thôi!
  1. Xử lý dữ liệu 
 - Dữ liệu cuộc thi khá lớn do ở dạng DICOM nên ở đây mình sử dụng một bộ dataset đã được convert sang PNG. [Here](https://www.miai.vn/thu-vien-mi-ai/.)
 - Dữ liệu gồm 3 file:
