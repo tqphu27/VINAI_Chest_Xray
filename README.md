@@ -1,4 +1,7 @@
+# Kiến trúc mạng YOLO
+
 # VINAI_Chest_Xray
+
 - IoU: phần giao lớn và phần hợp nhỏ.
 - Precision – đại diện cho độ tin cậy của model: Nó sẽ cho biết rằng trong những cái model dự đoán là Positive thì có bao nhiêu % là Positive thật.
 - Recall – đại diện cho độ nhạy của model: Nó sẽ cho biết model có thể tóm đúng được bao nhiêu Positive trong dữ liệu được cho.
