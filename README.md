@@ -45,6 +45,24 @@
    ![image](https://user-images.githubusercontent.com/90370260/157262030-0b07fb8a-102e-4571-939f-13e84eb4fdd7.png)
 
 4. Yolov4
+
+![image](https://user-images.githubusercontent.com/90370260/157271827-0a42da73-3a59-4551-95f0-5f5fa0c5c885.png)
+
+Cấu trúc của v4 được tác giả chia làm bốn phần:
+
+  + Backbone (xương sống)
+  
+  + Neck (cổ)
+  
+  + Dense prediction(dự đoán dày đặc) - sử dụng các one-stage-detection như YOLO hoặc SSD.
+  
+  + Sparese Prediction (dự đoán thưa thớt) - sử dụng các two- stage- detection như RCNN
+
+ ![image](https://user-images.githubusercontent.com/90370260/157272362-16d51e44-0768-4ffb-8c62-91e705a9587d.png) 
+
+- Backbone(Xương sống)- Trích xuất đặc trưng
+
+ Mạng xương sống cho nhận dạng vật thể thường được đào tạo trước thông qua bài toán phân loại ImageNet.
 5. Yolov5
 # VINAI_Chest_Xray
 
