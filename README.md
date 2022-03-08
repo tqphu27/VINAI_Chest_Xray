@@ -23,9 +23,15 @@
  Điểm cải tiến của YOLOv2 còn phải kể đến backbone mới có tên Darknet-19. Mạng này bao gồm 19 lớp convolution và 5 lớp maxpooling tạo ra tốc độ nhanh hơn phiên bản YOLO trước.
 
 3. Yolov3
- 
+ YOLOv3 có kiến trúc khá giống YOLOv2. Tác giả đã thêm các cải tiến mới trong các nghiên cứu gần đây vào YOLOv2 để tạo ra YOLOv3. Các cải tiến đó bao gồm:
+  + Logistic regression cho confidence score: Yolov3 predict độ tự tin của bounding box sử dụng logistic regression.
+  + Thay softmax bằng các logistic classifier rời rạc: Việc này cho hiệu quả tốt hơn nếu các label không "multually exclusive" , tức là có thể có đối tượng cùng thuộc 2 hay nhiều class khác nhau.
+  + Backbone mới - Darknet-53: Backbone được thiết kế lại với việc thêm các residual blocks (kiến trúc sử dụng trong ResNet).
+  + Backbone mới - Darknet-53: Backbone được thiết kế lại với việc thêm các residual blocks (kiến trúc sử dụng trong ResNet).
+  + Skip-layer concatenation: YOLOv3 cũng thêm các liên kết giữa các lớp dự đoán. Mô hình upsample các lớp dự đoán ở các tầng sau và sau đó concatenate với các lớp dự đoán ở các tầng trước đó. Phương pháp này giúp tăng độ chính xác khi predict các object nhỏ.
+   ![image](https://user-images.githubusercontent.com/90370260/157262030-0b07fb8a-102e-4571-939f-13e84eb4fdd7.png)
 
-4. Yolov3
+4. Yolov4
 5. Yolov5
 # VINAI_Chest_Xray
 
