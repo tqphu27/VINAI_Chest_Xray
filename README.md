@@ -4,6 +4,7 @@
  Với mỗi grid cell, mô hình sẽ đưa ra dự đoán cho B bounding box. Ứng với mỗi bõ trong B bounding box này sẽ là 5 tham số x,y,w,h,confidence lần lượt là tọa độ tâm(x,y), chiều rộng, chiều cao và dộ tự tin của dự đoán. Với mỗi grid cell trong lưới SxS kia, mô hình cũng dự đoán xác suất rơi vào mỗi class.
 <img src= "![image](https://user-images.githubusercontent.com/90370260/157260671-7f163747-aadc-4943-a06f-b99b305e3d83.png)
 ">
+<img src="![image](https://user-images.githubusercontent.com/90370260/157260671-7f163747-aadc-4943-a06f-b99b305e3d83.png)>
  YOLOv1 không có các hạn chế trong việc dự đoán vị trí của bounding box. Khi các trọng số được khởi tạo ngẫu nhiên, bounding box có thể được dự đoán ở bất kỳ đâu trong ảnh. Điều này khiến mô hình không ổn định trong giai đoạn đầu của quá trình huấn luyện. Vị trí của bounding box có thể ở rất xa so với vị trí của grid cell.
 *Nhược điểm:
   Yolov1 áp đặt các rằng buộc vể không gian trên những bounding box, mỗi grid cell chỉ có thể predict rất ít bounding box (B) và duy nhất một class => hạn chế khả năng nhận biết một số object nằm gần nhau, cũng như đối với các object có kích thước nhỏ.
