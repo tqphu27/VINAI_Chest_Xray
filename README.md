@@ -63,6 +63,33 @@ Cấu trúc của v4 được tác giả chia làm bốn phần:
 - Backbone(Xương sống)- Trích xuất đặc trưng
 
  Mạng xương sống cho nhận dạng vật thể thường được đào tạo trước thông qua bài toán phân loại ImageNet.
+ 
+ - CPSDarknet53
+   CSP(Cross- Stage- Partial connections) có nguồn gốc từ kiến trúc DenseNet sử dụng đầu vào trước đó và nối nó với đầu vào hiện tại trước khi chuyển vào Dense layer.
+   Nó có nhiệm vụ chia đầu vào của khối thành 2 phần, một phần sẽ qua các khối chập, và phần còn lại thì không.
+   => Sau đó 2 phần sẽ được cộng lại và đưa vào khối tiếp theo.
+   => Ý tưởng ở đây là loại vỏ các nút thắt tình toán trong DenseNet và cải thiện việc học bằng accsh chuyển phiên bản chưa chỉnh sửa của feature maps.
+   
+   ![image](https://user-images.githubusercontent.com/90370260/157361770-1d4c098a-ad20-468b-9fbd-ec0e82f7f2be.png)
+
+  DenseNet (Dense connected convolutional network) là một trong những network mới nhất cho visual object recognition. Nó cũng gần giống Resnet nhưng có một vài điểm khác biệt .
+  => Densenet có cấu trúc gồm các dense block và các transition layers. 
+  => Được stack dense block- transition layers-dense block- transition layers như hình vẽ.
+  => Với CNN truyền thống nếu chúng ta có L layer thì sẽ có L connection, còn trong densenet sẽ có L(L+1)/2 connection.( tức là các lớp phía trước sẽ được liên kết với tất cả các lớp phía sau nó).
+  
+  ![image](https://user-images.githubusercontent.com/90370260/157362202-9348a768-f922-47a4-8773-1410ec73b10f.png)
+
+  => Darknet53: Yolov4 sử dụng CSPDarknet53 để làm backbone vì theo tác giả, CSPDarknet53 có độ chính xác trong task object detection cao hơn so với ResNet; và mặc dù ResNet có độ chính xác trong task classification cao hơn, hạn chế này có thể được cải thiện nhờ hàm activation Mish và một vài kỹ thuật sẽ được đề cập phía dưới.
+ 
+ - Neck (phần cổ) - Tổng hợp đặc trưng.
+ 
+  Neck có nhiệm vụ trộn và kết hợp các bản đồ đặc trưng(features map) đã học được thông qua quá trình trích xuất đặc trưng (backbone) và quá trình nhận dạng(Yolov3 gợi là Dense prediction).
+  
+  Với mỗi lần thực hiện detect với các kích thước ảnh rescale khác nhau tác giả đã thêm các luồng đi từ dưới lên và các luồng đi từ trên xuống vào cùng nhau theo từng hoặc được nối với nhau trước khi đưua vào head.
+  => chứa được thông tin phong phú hơn.
+  
+  ![image](https://user-images.githubusercontent.com/90370260/157362701-38a2cf2b-65ba-44be-b2d0-390639b6379f.png)
+
 5. Yolov5
 # VINAI_Chest_Xray
 
